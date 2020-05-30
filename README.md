@@ -5,4 +5,4 @@ Demo:
 
 <img src="linear_regression_w_loss.png" width="800px" height="300px" />
 
-<img src="linear_regression.png" width="700px" height="200px" />
+<img src="linear_regression.png" width="800px" height="300px" />

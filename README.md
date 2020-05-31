@@ -1,5 +1,5 @@
-# Linear-regression-using-tf
-Linear regression using both high-level API (i.e., keras) and low-level tf APIs (e.g., GradientTape).
+# Linear-regression-using-tf2.2
+Linear regression using both keras or low-level tf APIs (e.g., GradientTape).
 
 Demo (linear_regression_tf_Low_API.py):
 

@@ -166,6 +166,8 @@ x, y, z = w_array[0,:], w_array[1,:], loss_arr
 # plt.plot(x.T) # plot each column of a 2D array by default
     
 #%% plot training details
+from mpl_toolkits.mplot3d import Axes3D
+
 # Fig.1. w, b vs loss
 fig = plt.figure(figsize = (15,5))
 # ax1 = plt.subplot(121)

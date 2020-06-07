@@ -63,8 +63,7 @@ plt.xlabel("x2")
 plt.ylabel("y",rotation = 0)
 plt.show()
 
-#%% data pipe
-# 构建数据管道迭代器 generator function, i.e., yield involved 
+#%% make data pipeline with generator function, i.e., yield involved 
 def data_iter(features, labels, batch_size=8):
     num_examples = len(features)
     indices = list(range(num_examples))
@@ -72,9 +71,9 @@ def data_iter(features, labels, batch_size=8):
     for i in range(0, num_examples, batch_size):
         #print('i',i)
         indexs = indices[i: min(i + batch_size, num_examples)]
-        yield tf.gather(X,indexs), tf.gather(Y,indexs)
+        yield tf.gather(features,indexs), tf.gather(labels,indexs)
         
-# test 测试数据管道效果   
+# test the pipeline   
 batch_size = 8
 (features,labels) = next(data_iter(X,Y,batch_size))
 print(features)
